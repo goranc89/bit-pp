@@ -16,7 +16,8 @@ s= a + b;
 o= a- b;
 m= a * b;
 d= a / b;
-console.log("Rezultati:", s, o, m, d);*/
+m= a % b;
+console.log("Rezultati:", s, o, m, d, m);*/
 /*3. Find the grade for input marks (you should have at least two input marks). Grades are:
 A (91-100), B (81-90), C (71-80), D (61-70), E (51-60). Optionally print if student has failed the exam.
 var a; var b=20; var c=40;
@@ -29,10 +30,17 @@ else if(a>=91 && a<=100) {console.log("Grade is A");}
 else {console.log("Student has failed the exam.");}*/
 /*4. Create two variables (or if you know how to do it - input fields). One should be a number, other
 should be a noun. Print on screen the number and pluralized form, like “5 cats” or “1 dog”. Bonus: Make
-it handle a few collective nouns like “sheep” and “geese”.
-var a=5;
+it handle a few collective nouns like “sheep” and “geese”. cow cattle, fox foxes, goose geese, sheep sheep, wolf wolves*/
+var a=5; 
 var noun= "cat";
-console.log(a + " " + noun +"s");*/
+if (noun == "cow") {console.log(a + " cattle");}
+else if (noun == "cow") {console.log(a + " cattle");}
+else if (noun == "fox") {console.log(a + " foxes");}
+else if (noun == "goose") {console.log(a + " geese");}
+else if (noun == "sheep") {console.log(a + " sheep");}
+else if (noun == "wolf") {console.log(a + " wolves");}
+else {
+console.log(a + " " + noun +"s");}
 /*5. Write a program to show you age based on entered number (if you know how to create input field, if
 not create variable and give it a value). If your age is 18 or older - print “You are old enough to drive”,
 but if not than print how many years you need to turn 18. If your age is greater than 18 - try one
@@ -64,7 +72,7 @@ else if(def > 0 ) {document.write("He/She is "+ def + " younger than me");}
 else if ( def < 0) {document.write("He/She is "+ Math.abs(def) + " older than me");}})*/
 /*7. Create 5 variables (or input fields) with canine species. Create one more variable with canine and
 compare it with first 5 species. If it is match - write that on screen. Example: “This is German Shepherd
-called Neo”. If there is no match - write on screen that this is a mixed breed.*/
+called Neo”. If there is no match - write on screen that this is a mixed breed.
 var a="Pug";
 var b="German Shepherd";
 var c="Pit bull";
@@ -79,4 +87,4 @@ btn.addEventListener('click', function(){
     else if (d==f) {document.write("This is Staford called Mia");}
     else if (e==f) {document.write("This is Cane corso called Rock");}
     else{document.write("This is a mixed breed");}
-})
+})*/
