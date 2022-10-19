@@ -275,7 +275,7 @@ console.log(result);*/
 
 /*8. Write a program that takes as input two numbers and a string denoting the operation (“+”, “-
 ”, “*”, “/”) and prints out the appropriate result. Watch out for division by zero!*/
-
+/*
 var a = 5, b = 0, sign = "/";
 var result = "";
 
@@ -311,3 +311,4 @@ switch (sign) {
 
 }
 console.log(result);
+*/

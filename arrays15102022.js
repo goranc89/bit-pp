@@ -15,8 +15,24 @@ console.log(arr [6]);
 
 /*3. Print all negative elements from the array [2, -4, 5, -2, -11].*/
 
-/*var array = [2, -4, 5, -2, -11];
-console.log(array[1], array[3], array[4]);*/
+var array = [2, -4, 5, -2, -11];
+
+if (array[0] < 0) {
+    console.log(array[0]);
+}
+if (array[1] < 0) {
+    console.log(array[1]);
+}
+if (array[2] < 0) {
+    console.log(array[2]);
+}
+if (array[3] < 0) {
+    console.log(array[3]);
+}
+if (array[4] < 0) {
+    console.log(array[4]);
+}
+
 
 /*4. Print all elements with indices divisible by 3 from the array [5, 15, -5, 20, 12, 18,
 72, 14, 9].*/
@@ -35,7 +51,7 @@ for (var i = 0; i < array.length; i++) {
 Using console.log:
 ● Display the 3rd element of the array,
 ● Display the 2nd element of the 3rd element.*/
-var array = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3,
+/*var array = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3,
     10, 26, 7]];
     console.log(array[2]);
-    console.log(array[2][1]);
+    console.log(array[2][1]);*/
