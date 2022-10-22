@@ -18,10 +18,11 @@ body {
 /* --------Hedings------- */
 
 h1 {
-    font-family:'Times New Roman', Times, serif padding: 20px 0;
-    text-align: center;
-    background-color: blue;
-    color: white;
+    
+    padding: 20px 0;
+    text-align: right;
+    background: #190fcd;
+    color: rgb(29, 198, 43);
 }
 
 h2 {
