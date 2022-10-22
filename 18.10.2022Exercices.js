@@ -50,6 +50,6 @@ Given array is: [1, 3, 32, $, g, h, t, s, c, 66, 23, h2].
 var niz = [1, 3, 32, "$" ,  "g", "h", "t","s", "c", 66, 23, "h2"];
     for(var i = 0; i <= niz.length; i++ ) {
         if(niz[i]=="c"){
-            console.log("c je na mestu broj: " + (i + 1));
+            console.log("c je na mestu broj: " + i);
         }
     }
