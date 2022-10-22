@@ -1,0 +1,36 @@
+.body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.prvi {
+    text-align: left;
+    letter-spacing: 5px;
+    font-family: comic;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.drugi {
+    text-align: right;
+    line-height: 200%;
+    font-family: 'Fasthand', cursive;
+    font-style: oblique;
+    text-transform: lowercase;
+    
+    
+    
+}
+
+span.dr {
+    font-weight: 1000;
+}
+.treci {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@font-face {
+    font-family: comic;
+    src: url('Milky Honey.ttf');
+}
+@font-face {
+    font-family: 'Fasthand', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+}

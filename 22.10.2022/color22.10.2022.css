@@ -1,0 +1,32 @@
+.prvi {
+    color: darkturquoise;
+    opacity: 0.5;
+    background-color: black;
+}
+
+.drugi {
+    color: #00ced1;
+    /*background-color: blue;*/
+    background-color: rgba(0, 0, 100, 0.5);
+}
+
+.treci {
+    color: rgb (64,224,208);
+    background-color: yellow;
+}
+.table td:nth-child(1) {
+    background: aliceblue;
+  }
+  .table td:nth-child(5) {
+    background: blue;
+  }
+  .table td:nth-child(3) {
+    background: green;
+  }
+ 
+  .table td:nth-child(2) {
+    background: hotpink;
+  }
+  .table td:nth-child(4) {
+    background: darkred;
+  }
