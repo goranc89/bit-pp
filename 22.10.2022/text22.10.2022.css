@@ -8,15 +8,20 @@
     text-transform: uppercase;
     text-decoration: underline;
 }
+.prvi q {
+    quotes: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .drugi {
     text-align: right;
     line-height: 200%;
     font-family: 'Fasthand', cursive;
     font-style: oblique;
     text-transform: lowercase;
-    
-    
-    
+   
+}
+.drugi q {
+    font-family: comic;
 }
 
 span.dr {
@@ -25,6 +30,9 @@ span.dr {
 .treci {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.treci q {
+    font-family: 'Fasthand', cursive;
 }
 @font-face {
     font-family: comic;

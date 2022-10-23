@@ -4,6 +4,8 @@ number is odd or even, and display a message to the screen.*/
 /*var it = 15; 
 for (var i = 1; i <= it; i++) {
     if (i % 2 == 0) {
+        console.log(i + " is even number!");
+    } else {
         console.log(i + " is odd number!");
     }
 }*/
@@ -160,14 +162,15 @@ for (var e in aa) {
 Input array: [-3, 11, 5, 3.4, -8]
 Output array: [-3, 22, 10, 6.8, -8]*/
 
-/*var arr = [-3, 11, 5, 3.4, -8];
+/*var arr = [-3, 11, 5, 3.4, -8]; a = [];
 
 for (i = 0; i < arr.length; i++) {
     if (arr[i] > 0) {
         arr[i] = arr[i] * 2;
     }
-    console.log(arr[i]);
-}*/
+    a.push(arr[i]);
+}
+    console.log("[" + a.join(', ') + "]");*/
 
 /*3. Write a program that finds the minimum of a given array and prints out its value and
 index.
@@ -221,9 +224,9 @@ be read the same way both from the left and the right hand side.
 Input array: [2, 4, -2, 7, -2, 4, 2]
 Output: The array is symmetric.
 Input array: [3, 4, 12, 8]
-Output: The array isn’t symmetric. else if (A[i] != A[n-1-i])*/
+Output: The array isn’t symmetric. */
 
-/*var arr = [2, 4, -2, 7, -2, 4, 2]; sym = true; 
+var arr = [2, 4, -2, 7, -2, 4, 2]; sym = true; 
 
 for (i = 0; i < arr.length; i++) {
    if (arr[i] != arr[arr.length - 1 - i]) {
@@ -235,7 +238,7 @@ if (sym == true) {
     console.log("The array is symmetric.");
 } else {
     console.log("The array is not symmetric.");
-}*/
+}
 
 
 /*7. Write a program that intertwines two arrays. You can assume the arrays are of the same
@@ -243,26 +246,27 @@ length.
 Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 Output array: [4, 3, 5, 8, 6, 11, 2, 9]*/
 
-/*var a = [4, 5, 6, 2]; aa = [3, 8, 11, 9];
+/*var a = [4, 5, 6, 2]; aa = [3, 8, 11, 9]; arr = [];
 
 for (i = 0; i < a.length; i++) {
-    console.log(a[i]);
-    console.log(aa[i]);
-}*/
+    arr.push(a[i]);
+    arr.push(aa[i]);
+}
+console.log("[" + arr.join(', ') + "]");*/
 
 /*8. Write a program that concatenates two arrays.
 Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 Output array: [4, 5, 6, 2, 3, 8, 11, 9]*/
 
-/*var a = [4, 5, 6, 2]; aa = [3, 8, 11, 9];
+/*var a = [4, 5, 6, 2]; aa = [3, 8, 11, 9]; arr = [];
 
-for (i = 0; i < a.length; i++) {
-    console.log(a[i]);
+for ( i = 0; i < a.length; i++) {
+    arr.push(a[i]);
 }
-
-for (j = 0; j < aa.length; j++) {
-    console.log(aa[j]);
-}*/
+for ( i = 0; i < aa.length; i++) {
+    arr.push(aa[i]);
+}
+console.log("[" + arr.join(', ') + "]");*/
 
 /*9. Write a program that deletes a given element e from the array a.
 Input: e = 2, a = [4, 6, 2, 8, 2, 2]
@@ -287,7 +291,7 @@ the value of the position is greater than the array length, print the error mess
 Input: e = 78, p = 3, a = [2, -2, 33, 12, 5, 8]
 Output: [2, -2, 33, 78, 12, 5, 8]*/
 
-var e = 78; p = 3; a = [2, -2, 33, 12, 5, 8]; newA = [];
+/*var e = 78; p = 10; a = [2, -2, 33, 12, 5, 8]; newA = [];
 
 if (p > a.length) {
     console.log("Error! New element index is greater than array's length");
@@ -297,20 +301,19 @@ if (p > a.length) {
     }
     newA.push(e);
     for (i = p + 1; i < a.length + 1; i++) {
-        newA.push(a[i-1]);
-    }    
-}
-for (i = 0; i < a.length; i++) {
+        newA.push(a[i - 1]);
+    }
+    /*for (i = 0; i < a.length; i++) {
     console.log(a[i]);
 } 
 console.log("********************************");
 for (j = 0; j < newA.length; j++) {
     console.log(newA[j]);
 } 
-console.log("[");
 console.log(...newA);
-console.log("]");
-console.log("[" + newA.join(', ') + "]");
+    console.log("[" + newA.join(', ') + "]");
+}*/
+
 
 
 
