@@ -136,6 +136,10 @@ for (i = 1; i <= it; i++) {
     if (i % 5 == 0 && i % 3 != 0) {
         console.log("Buzz!");
     }
+    
+///////////////////////////////
+// Ovu proveru gde gledas da li je i%5 == 0 && i%2 == 0 bi trebao da ubacis na drugo mesto. Zbog cega i gde? :) 
+//////////////////////////////////
     if (i % 5 == 0 && i % 3 == 0) {
         console.log("FizzBuzz!");
     }
