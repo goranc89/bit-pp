@@ -55,18 +55,26 @@ is 5 the program should draw:
 * *
 ***** */
 
-/*function squarePrint(num) {
+function squarePrint(num) {
     var string = "";
     for (i = 0; i < num; i++){
         for (j = 0; j < num; j++) {
-            string += "*";
+            if(i===0 || i=== num-1){
+                string += "*";
+            }else{
+                if(j ===0 || j === num-1){
+                    string += "*";
+                }else{
+                    string += " ";
+                }
+            }
         }
         string += "\n";
     }
     return string;
 }
 var number = squarePrint(5);
-console.log(number);*/
+console.log(number);
 
 
 /*6. Write a program that draws a horizontal chart representing three given values. For
