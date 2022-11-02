@@ -170,19 +170,18 @@ console.log(sprovedi);*/
 non-numeric values.
 [&quot;1&quot;, &quot;21&quot;, undefined, &quot;42&quot;, &quot;1e+3&quot;, Infinity] -&gt; [1, 21, 42, 1000]*/
 
-/*function filterNumber(arr) {
+function filterNumber(arr) {
+    for (i = 0; i < arr.length; i++) {
+        arr[i] = parseFloat(arr[i]);
+    }
+    for (i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(arr[i]);
+    }
     nums = arr.filter(Number);
-    return nums;
+    return "[" + nums.join(", ") + "]";
 }
-var sprovedi = filterNumber(["21", undefined, "4", null, "78"]);
-console.log(sprovedi);*/
-
-/*function filterNumber(arr) {
-    nums = arr.filter(Number);
-    return nums;
-}
-var sprovedi = filterNumber(["21", undefined, "4", null, "78"]);
-console.log(sprovedi);*/
+var sprovedi = filterNumber(["1", "21", undefined, "42", "1e+3", Infinity]);
+console.log(sprovedi);
 
 /*12. Write a function to calculate how many years there are left until retirement based on the
 year of birth. Retirement for men is at age of 65 and for women at age of 60. If someone is
@@ -213,7 +212,7 @@ the correct suffix such as 1st, 2nd, 3rd or 4th.
 1 -&gt; 1st
 11 -&gt; 11th*/
 
-function humanizeNumber(number) {
+/*function humanizeNumber(number) {
     if(number % 100 >= 11 && number % 100 <= 13)
             return number + "th";
         switch(number % 10) {
@@ -224,4 +223,4 @@ function humanizeNumber(number) {
         return number + "th";
 }
 var sprovedi = humanizeNumber(87);
-console.log(sprovedi);
+console.log(sprovedi);*/
