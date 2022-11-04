@@ -1,0 +1,44 @@
+.glavni {
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+.h1 {
+    text-align: center;
+}
+.sun {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 100px;
+    height: 100px;
+}
+.cat {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+}
+.shark {
+    position: fixed;
+    left: 50px;
+    bottom: 5px;
+    width: 200px;
+}
+.p1 {
+    width: 1000px;
+}
+.p2 {
+    width: 800px;
+}
+.p3 {
+    width: 800px;
+}
+.back {
+    position: fixed;
+    width: 50px;
+    bottom: 10px;
+    right: 10px;
+}
