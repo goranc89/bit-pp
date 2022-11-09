@@ -233,23 +233,36 @@ Output: true | false*/
 
 /*function prime(num) {
     for (i = 2; i < num; i++) {
-        if ( num % i != 0 ) {
-            return "The number " + num + " is prime number!";
-        }  else {
+        if ( num % i == 0 ) {
             return "The number " + num + " is not prime number!";
+        }  else {
+            return "The number " + num + " is prime number!";
         }
     }
 }
-var sprovedi = prime(7);
+var sprovedi = prime(15);
 console.log(sprovedi);*/
+
+function prime(num) {
+    if(num == 2) 
+    return true;
+    for(i = 2; i < num; i++) 
+    {
+    if(num % i == 0) 
+    return "The number " + num + " is not prime number!"; 
+    }
+    return "The number " + num + " is prime number!";
+}
+var sprovedi = prime(21);
+console.log(sprovedi);
 
 /*11. Check if a given string is a palindrome (spaces are ignored).
 Input: eye | Geek | a nut for a jar of tuna
 Output: true | false | true*/
 
 /*function equalString(string) {
-    var newString = string.split('').reverse().join('');
-    string = string.split(' ').join('');
+    var newString = string.toLowerCase().split('').reverse().join('');
+    string = string.toLowerCase().split(' ').join('');
     newString = newString.split(' ').join('');
     if (string == newString) {
         return true;
@@ -257,7 +270,7 @@ Output: true | false | true*/
         return false;
     }
 }
-var sprovedi = equalString("e ye");
+var sprovedi = equalString("Ana voli Milovana");
 console.log(sprovedi);*/
 
 /*12. Write a program that calculates the greatest common divisor of two integers. Note: The
