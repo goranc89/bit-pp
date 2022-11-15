@@ -1,0 +1,34 @@
+.container {
+    width: 100%;
+    margin:auto; 
+}
+header {
+    display: inline;
+    padding: 10px;
+}
+
+nav {
+    display: inline;
+   
+}
+.navList {
+    
+}
+ li {
+   padding: 5px;
+    float: right;
+    list-style-type: none;
+ }
+ 
+ main {
+    display: flex;
+    padding: 10px;
+ }
+ aside {
+    flex: 1 0 0 320px;
+    padding: 10px;
+ }
+ section {
+    flex: 1 0 0 320px;
+    padding: 10px;
+ }
