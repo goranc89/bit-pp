@@ -6,55 +6,67 @@ body {
     background-color: rgb(184, 18, 18);
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .lista {
     color: white;
     float: right;
     padding-right: 20px;
 }
+
 li {
     list-style: none;
-   display: inline-block;
-   
-   height: 50px;
+    display: inline-block;
+
+    height: 50px;
 }
+
 .divici {
     display: flex;
-   color: white;
-   text-align: center;
-   font-size: x-large;
-   
+    color: white;
+    text-align: center;
+    font-size: x-large;
+
 }
-#prvi, #osmi {
+
+#prvi,
+#osmi {
     background-color: red;
     width: 300px;
     height: 200px;
     margin: 10px 10px 10px 10px;
     line-height: 200px;
 }
-#treci, #cetvrti {
+
+#treci,
+#cetvrti {
     background-color: blue;
     width: 300px;
     height: 200px;
     margin: 10px 10px 10px 10px;
-    
+
     line-height: 200px;
 }
-#drugi, #sesti {
+
+#drugi,
+#sesti {
     background-color: rgb(211, 211, 83);
     width: 300px;
     height: 200px;
     margin: 10px 10px 10px 10px;
-    
+
     line-height: 200px;
 }
-#peti, #deveti {
+
+#peti,
+#deveti {
     background-color: green;
     width: 300px;
     height: 200px;
     margin: 10px 10px 10px 10px;
-    
+
     line-height: 200px;
 }
+
 #sedmi {
     background-color: rgb(211, 211, 83);
     position: relative;
@@ -62,12 +74,14 @@ li {
     right: 0;
     margin-bottom: 39px;
 }
+
 .text {
     color: black;
     font-size: large;
     text-align: left;
     padding: 10px 10px 10px 10px;
 }
+
 .zadnji {
     width: 1200px;
     background: rgb(45, 45, 96);
