@@ -25,8 +25,9 @@
 //             }
 //         }
 //     }
+//     charsUp = charsUp.sort();
 //     bigArr = nums.concat(charsUp).sort(function (a, b) { return a - b; });
-//     chars.sort()
+//     chars.sort();
 //     bigArr = bigArr.concat(chars);
 //     for (i = 0; i < arr.length; i++) {
 //         endArr.push(bigArr.splice(0, arr[i].length));
@@ -146,54 +147,53 @@
 //   [21, "x", 24, 30, 52]
 // ]) ➞ false
 
-function bingoCheck(arr) {
-    var diag1 = [];
-    var diag2 = [];
-    var count = 0;
-    const allEqual = arr => arr.every(val => val === arr[0]);
-    for (i = 0; i < arr.length; i++) {
-        if (allEqual(arr[i])) {
-            return true;
-        }
-    }
-    for (i = 0; i < arr.length; i++) {
-        for (j = 0; j < i; j++) {
-            const tmp = arr[i][j];
-            arr[i][j] = arr[j][i];
-            arr[j][i] = tmp;
-        }
-    }
-    for (i = 0; i < arr.length; i++) {
-        if (allEqual(arr[i])) {
-            return true;
-        }
-    }
-    for (i = 0; i < arr.length; i++) {
-        for (j = 0; j < arr[i].length; j++) {
-            if (i == j) {
-                diag1.push(arr[i][j]);
-            }
-        }
-    }
-    for (i = 0; i < arr.length; i++) {
-        for (j = 0; j < arr[i].length; j++) {
-            if (i == j) {
-                diag2.push(arr[i][j]);
-            }
-        }
-    }
-    if (allEqual(diag1) || allEqual(diag2)) {
-        return true;
-    }
-    return false;
-}
-console.log(bingoCheck([
-    ["x", 43, 31, 74, 87],
-  [64, "x", 47, 32, 90],
-  [37, 65, "x", 83, 54],
-  [67, 98, 39, "x", 44],
-  [21, 59, 24, 30, "x"]
-]));
+// function bingoCheck(arr) {
+//     var diag1 = [];
+//     var diag2 = [];
+//     var count = 0;
+//     const allEqual = arr => arr.every(val => val === arr[0]);
+//     for (i = 0; i < arr.length; i++) {
+//         if (allEqual(arr[i])) {
+//             return true;
+//         }
+//     }
+//     for (i = 0; i < arr.length; i++) {
+//         for (j = 0; j < i; j++) {
+//             const tmp = arr[i][j];
+//             arr[i][j] = arr[j][i];
+//             arr[j][i] = tmp;
+//         }
+//     }
+//     for (i = 0; i < arr.length; i++) {
+//         if (allEqual(arr[i])) {
+//             return true;
+//         }
+//     }
+//     for (i = 0; i < arr.length; i++) {
+//         for (j = 0; j < arr[i].length; j++) {
+//             if (i == j) {
+//                 diag1.push(arr[i][j]);
+//             }
+//         }
+//     }
+//     for (i = 0; i < arr.length; i++) {
+//         for (j = 0; j < arr[i].length; j++) {
+//             if ((i + j) == (arr.length - 1))
+//                 diag2.push(arr[i][j]);
+//         }
+//     }
+//     if (allEqual(diag1) || allEqual(diag2)) {
+//         return true;
+//     }
+//     return false;
+// }
+// console.log(bingoCheck([
+//     ["x", 43, 31, 74, 87],
+//     [64, "x", 47, 32, 90],
+//     [37, 65, "x", 83, 54],
+//     [67, 98, 39, "x", 44],
+//     [21, 59, 24, 30, "x"]
+// ]));
 
 // 5. When a person receives a blood transfusion, it is essential to make sure that the donor's blood type is compatible with the
 // receiver's blood type. Receiving a blood type that is not compatible with your own can be life-threating, so blood banks always make
@@ -210,9 +210,21 @@ console.log(bingoCheck([
 // A person with the Rh factor may only give blood to another person with the Rh factor.
 // A person with none of the above factors (O-) can give blood to anyone.
 // Write a function that takes in a donor's and receiver's blood types as strings and returns whether or not the donor can safely give
-//blood to the receiver, according to the rules above. For clarity: all letters are capital and each blood type will be one of the following strings: "O+", "O-", "A+", "A-", "B+", "B-", "AB+", "AB-".
+//blood to the receiver, according to the rules above. For clarity: all letters are capital and each blood type will be one of the 
+//following strings: "O+", "O-", "A+", "A-", "B+", "B-", "AB+", "AB-".
 // Examples:
 // canGiveBlood("O+", "A+") ➞ true
 // canGiveBlood("A-", "B-") ➞ false
 // canGiveBlood("A-", "AB+") ➞ true
 // .
+// function canGiveBlood(str1, str2) {
+//     var bloodTypes = ["O+", "O-", "A+", "A-", "B+", "B-", "AB+", "AB-"];
+//     for (i = 0; i < bloodTypes.length; i++) {
+//         if (str1 === "O-" && str2 === bloodTypes[i]) {
+//             return true;
+//         }
+//     }
+// }
+// console.log(canGiveBlood("A-", "AB-"));
+
+
