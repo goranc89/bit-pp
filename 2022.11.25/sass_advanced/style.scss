@@ -1,0 +1,39 @@
+$color1: red;
+$color2: yellow;
+$font-family: 'Times-New-Roman';
+$f-size: 26px;
+
+a {
+    color: $color2;
+    font-family: $font-family;
+    font-size: $f-size;
+    &:hover {
+        color: $color1;
+    }
+}
+
+p {
+    span {
+        font-family: $font-family;
+    }
+}
+
+div {
+    color: lime;
+}
+
+
+
+$type: monster;
+
+p {
+    @if $type==ocean {
+        color: blue;
+    }
+    @else if $type==monster {
+        color: yellow;
+    }
+    @else {
+        color:  red;
+    }
+}

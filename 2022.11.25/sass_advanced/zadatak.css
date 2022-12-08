@@ -1,0 +1,60 @@
+a {
+  text-decoration: none;
+  background-color: green;
+}
+a:hover {
+  background-color: yellow;
+}
+a:visited {
+  background-color: yellow;
+}
+a.important {
+  font-weight: bold;
+}
+
+.item-1 {
+  font-size: 16px;
+}
+
+.item-2 {
+  font-size: 32px;
+}
+
+.item-3 {
+  font-size: 48px;
+}
+
+.item-4 {
+  font-size: 64px;
+}
+
+.item-1 {
+  background-color: yellow;
+}
+
+.item-2 {
+  background-color: orange;
+}
+
+.item-3 {
+  background-color: green;
+}
+
+.item-4 {
+  background-color: red;
+}
+
+.item-5 {
+  width: 600px;
+}
+
+.item-6 {
+  width: 555px;
+}
+
+th, td {
+  width: 100px;
+  border: 2px solid black;
+}
+
+/*# sourceMappingURL=zadatak.css.map */

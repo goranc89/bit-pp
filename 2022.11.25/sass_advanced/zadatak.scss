@@ -1,0 +1,70 @@
+$textDecoration: none;
+$color1: yellow;
+$color2: orange;
+$color3: green;
+$color4: red;
+
+a {
+    text-decoration: $textDecoration;
+    background-color: $color3;
+    &:hover{
+        background-color: $color1;
+    }
+    &:visited {
+        background-color: $color1;
+    }
+    &.important {
+        font-weight: bold;
+    }
+}
+
+@for $i from 1 through 4 {
+    .item-#{$i} {
+        font-size: 16px * $i;
+        
+    }
+}
+
+@mixin  background-color($color) {
+    
+    @if $color == 1 {
+        background-color: $color1;
+    } 
+    @if $color == 2 {
+        background-color: $color2;
+    } 
+    @if $color == 3 {
+        background-color: $color3;
+    } 
+    @if $color == 4 {
+        background-color: $color4;
+    }   
+}
+@for $i from 1 through 4 {
+    .item-#{$i} {
+        @include background-color($i);
+        
+    }
+}
+$content-box-width: 600px;
+$padding: 30px;
+$border: 15px;
+
+@function translate($content-box-width, $padding, $border) {
+    $border-box-width: $content-box-width - $padding - $border;
+    @return $border-box-width;
+}
+.item-5 {
+    width: $content-box-width;
+}
+.item-6 {
+    width: translate(600px, 30px, 15px);
+}
+@function equalySized($size, $num) {
+    @return $size / $num;
+}
+th, td {
+    width: equalySized(1000px, 10);
+    border: 2px solid black;
+}
+

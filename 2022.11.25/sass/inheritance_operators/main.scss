@@ -1,0 +1,22 @@
+.inheritance {
+    border: 2px solid;
+    text-align: center;
+}
+.first {
+    @extend .inheritance;
+    border-color: red;
+    width: 300px / 960px * 100%;
+ 
+}
+.second {
+    @extend .inheritance;
+    border-color: blue;
+    width: 400px / 960px * 100%;
+    
+}
+.third {
+    @extend .inheritance;
+    border-color: green;
+    width: 500px / 960px * 100%;
+    float: right;
+}

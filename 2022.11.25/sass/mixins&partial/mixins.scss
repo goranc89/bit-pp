@@ -1,0 +1,7 @@
+@mixin textShadow($px1, $px2, $color) {
+    text-shadow: $px1 $px2 $color;
+}
+
+@mixin boxShadow($px1, $px2, $color) {
+    box-shadow: $px1 $px2 $color;
+}

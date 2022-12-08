@@ -1,0 +1,11 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.boxShadow {
+    @include boxShadow(5px, 5px, $color1);
+    border: 1px solid black;
+}
+.textShadow {
+    @include textShadow(2px, 2px, $color2);
+    font-size: xx-large; 
+}

@@ -1,0 +1,22 @@
+.inheritance, .third, .second, .first {
+  border: 2px solid;
+  text-align: center;
+}
+
+.first {
+  border-color: red;
+  width: 31.25%;
+}
+
+.second {
+  border-color: blue;
+  width: 41.6666666667%;
+}
+
+.third {
+  border-color: green;
+  width: 52.0833333333%;
+  float: right;
+}
+
+/*# sourceMappingURL=main.css.map */

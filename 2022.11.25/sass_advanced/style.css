@@ -1,0 +1,22 @@
+a {
+  color: yellow;
+  font-family: "Times-New-Roman";
+  font-size: 26px;
+}
+a:hover {
+  color: red;
+}
+
+p span {
+  font-family: "Times-New-Roman";
+}
+
+div {
+  color: lime;
+}
+
+p {
+  color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

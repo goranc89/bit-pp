@@ -1,0 +1,11 @@
+.boxShadow {
+  box-shadow: 5px 5px yellow;
+  border: 1px solid black;
+}
+
+.textShadow {
+  text-shadow: 2px 2px red;
+  font-size: xx-large;
+}
+
+/*# sourceMappingURL=main.css.map */

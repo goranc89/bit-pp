@@ -1,0 +1,13 @@
+body {
+  background-color: gray;
+}
+
+.container {
+  width: 500px;
+  background: yellow;
+}
+.container h1 {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
