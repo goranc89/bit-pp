@@ -1,0 +1,20 @@
+.row {
+  background-color: gray;
+  padding: 10px;
+}
+
+.col-4, .col-6, .col-8, .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12, .col-sm-3, .col-sm-12, .col-sm-6 {
+  background-color: cyan;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+#id {
+  height: 100px;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+/*# sourceMappingURL=bootstrap.css.map */
