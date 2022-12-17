@@ -1,0 +1,22 @@
+@import "_variables.scss";
+
+.global {
+    background-color: $blueish;
+    color: white;
+    text-align: center;
+}
+.global i.fa {
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 3px white;
+    padding: 0.5em 0.6em;
+  
+  }
+.footer {
+    background-color: $blueish;
+    text-align: center;
+    color: white;
+}
+.footer h6 {
+    color: gray;
+}

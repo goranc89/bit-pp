@@ -1,0 +1,11 @@
+@import "_variables.scss";
+.masthead {
+    background-color: $greenish;
+    color: white;
+    text-align: center;
+}
+.masthead .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
