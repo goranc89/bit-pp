@@ -55,7 +55,8 @@
 //         return "Error!";
 //     }
 //     var newArr = arr.slice(0, (arr.length + 1) / 2);
-//     return newArr.length;
+//     var endArr = arr.filter(function(a) {return a < arr[newArr.length - 1]});
+//     return endArr.length;
 // }
 // console.log(countElements([-1, 8.1, 3, 6, 2.3, 44, 2.11]));
 
@@ -85,7 +86,7 @@
 // Output: [2, 3, -2, 4]
 
 // function arrLess(arr, n) {
-//     return arr.filter(function(a) {return a < n})
+//     return arr.filter(function(a) {return a < n});
 // }
 // console.log(arrLess([2, 3, 8, -2, 11, 4], 6));
 
@@ -170,53 +171,53 @@
 // 7.
 // a. Write a function that checks if a given string is written in all capitals.
 
-function allCaps(string) {
-    //     if (/^[A-Z]+$/.test(string)) {
-    //         return "String is writen in all caps!";
-    //     } else {
-    // return false;
-    //  }
-    if (string.toUpperCase() == string) {
-        return "String is writen in all caps!";
-    } else {
-        return false;
-    }
-}
+// function allCaps(string) {
+//     //     if (/^[A-Z]+$/.test(string)) {
+//     //         return "String is writen in all caps!";
+//     //     } else {
+//     // return false;
+//     //  }
+//     if (string.toUpperCase() == string) {
+//         return "String is writen in all caps!";
+//     } else {
+//         return false;
+//     }
+// }
 //console.log(allCaps("SASA"));
 
 // b. Write a function that checks if a given string contains any digits.
 
-function checkNumbers(string) {
-    if (/[0-9]/.test(string)) {
-        return "String contains numbers!";
-    } else {
-        return false;
-    }
-}
+// function checkNumbers(string) {
+//     if (/[0-9]/.test(string)) {
+//         return "String contains numbers!";
+//     } else {
+//         return false;
+//     }
+// }
 //console.log(checkNumbers("9SASA"));
 
 // c. Write a function that checks if a given string is a valid hexadecimal color.
 
-function checkHex(string) {
-    if (/[0-9A-Fa-f]{6}/g.test(string)) {
-        return "String is hexadecimal color!";
-    } else {
-        return false;
-    }
+// function checkHex(string) {
+//     if (/[0-9A-Fa-f]{6}/g.test(string)) {
+//         return "String is hexadecimal color!";
+//     } else {
+//         return false;
+//     }
 
-}
+// }
 //console.log(checkHex("#0080c0"));
 
 // d. Write a function that checks if a given number belongs to the interval from 1900
 // to 2018.
 
-function checkYear(num) {
-    if (num < 2018 && num > 1900) {
-        return "Year is correct!"
-    } else {
-        return false;
-    }
-}
+// function checkYear(num) {
+//     if (num < 2018 && num > 1900) {
+//         return "Year is correct!"
+//     } else {
+//         return false;
+//     }
+// }
 //console.log(checkYear(1979));
 
 // e. Write a function named validator that returns an object with properties
@@ -347,10 +348,10 @@ function checkYear(num) {
 
 // Output: [6, 2, 9, 1, 3, 11] (it can be any random permutation of the given array)
 
-function shuffleArray(arr) {
-    var newArr = arr.sort(function() {
-        return Math.random() - 0.5;
-    });
-    return "[" + newArr.join(", ") + "]";
-}
-console.log(shuffleArray([3, 6, 11, 2, 9, 1]));
+// function shuffleArray(arr) {
+//     var newArr = arr.sort(function() {
+//         return Math.random() - 0.5;
+//     });
+//     return "[" + newArr.join(", ") + "]";
+// }
+// console.log(shuffleArray([3, 6, 11, 2, 9, 1]));
