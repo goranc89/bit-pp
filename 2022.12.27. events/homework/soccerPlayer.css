@@ -1,0 +1,12 @@
+body {
+    background-image: url(./soccerField.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#stopMoving {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+
+}

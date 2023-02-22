@@ -1,0 +1,24 @@
+.box {
+    display: flex;
+    height: 80%;
+}
+#first, #second {
+    height: 80%;
+    width: 40%;
+    border: 1px solid black;
+    padding: 5%;
+    margin: 5%;
+}
+.input {
+    display: flex;
+    margin: 5%;
+}
+#input1 {
+    width: 55%;
+    float: left;
+
+}
+#input2 {
+    width: 45%;
+    float: right;
+}

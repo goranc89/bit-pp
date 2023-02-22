@@ -1,0 +1,8 @@
+#mario {
+    width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: 2;
+  left: 20%;
+  bottom: 18%;
+}
