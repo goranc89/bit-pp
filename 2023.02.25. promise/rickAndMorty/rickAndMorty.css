@@ -1,0 +1,32 @@
+body {
+    background-image: url(./Rick_and_Morty_title_card.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.card {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 25px;
+    width: 200px;
+    height: 200px;
+}
+
+#infoCard {
+    position: absolute;
+    top: 80px;
+    left: 550px;
+
+    width: 400px;
+    height: 700px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: gray;
+}
