@@ -1,0 +1,12 @@
+{
+  "name": "2023.03.02.packagemanagers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "figlet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
